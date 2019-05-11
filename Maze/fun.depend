@@ -1,0 +1,91 @@
+# depslib dependency file v1.0
+1557536521 source:f:\coding\!a\dut\test\fun\main.cpp
+	<iostream>
+	"MazeGame.h"
+	"BombedMazeFactory.h"
+	"EnchantedMazeFactory.h"
+
+1557488892 source:f:\coding\!a\dut\test\fun\src\maze.cpp
+	"Maze.h"
+
+1557573292 f:\coding\!a\dut\test\fun\include\maze.h
+	"Room.h"
+
+1557573090 f:\coding\!a\dut\test\fun\include\room.h
+	"MapSite.h"
+	<stdlib.h>
+	<iostream>
+
+1557488406 f:\coding\!a\dut\test\fun\include\mapsite.h
+
+1557492892 source:f:\coding\!a\dut\test\fun\src\bombedwall.cpp
+	"BombedWall.h"
+
+1557578123 f:\coding\!a\dut\test\fun\include\bombedwall.h
+	"Wall.h"
+
+1557577381 f:\coding\!a\dut\test\fun\include\wall.h
+	"MapSite.h"
+
+1557490662 source:f:\coding\!a\dut\test\fun\src\mazefactory.cpp
+	"Mazefactory.h"
+
+1557536672 f:\coding\!a\dut\test\fun\include\mazefactory.h
+	"Door.h"
+	"Maze.h"
+	"Wall.h"
+
+1557577628 f:\coding\!a\dut\test\fun\include\door.h
+	<stdlib.h>
+	"Room.h"
+
+1557492646 source:f:\coding\!a\dut\test\fun\src\bombedmazefactory.cpp
+	"BombedMazeFactory.h"
+
+1557536554 f:\coding\!a\dut\test\fun\include\bombedmazefactory.h
+	"Mazefactory.h"
+	"BombedWall.h"
+	"RoomWithABomb.h"
+
+1557577288 f:\coding\!a\dut\test\fun\include\roomwithabomb.h
+	"Room.h"
+
+1557493442 source:f:\coding\!a\dut\test\fun\src\door.cpp
+	"Door.h"
+
+1557494000 source:f:\coding\!a\dut\test\fun\src\doorneedingspell.cpp
+	"DoorNeedingSpell.h"
+
+1557578209 f:\coding\!a\dut\test\fun\include\doorneedingspell.h
+	"Door.h"
+	<iostream>
+
+1557492233 source:f:\coding\!a\dut\test\fun\src\enchantedmazefactory.cpp
+	"EnchantedMazeFactory.h"
+
+1557536672 f:\coding\!a\dut\test\fun\include\enchantedmazefactory.h
+	"Mazefactory.h"
+	"EnchantedRoom.h"
+	"DoorNeedingSpell.h"
+
+1557577279 f:\coding\!a\dut\test\fun\include\enchantedroom.h
+	"Room.h"
+
+1557493974 source:f:\coding\!a\dut\test\fun\src\enchantedroom.cpp
+	"EnchantedRoom.h"
+
+1557568227 source:f:\coding\!a\dut\test\fun\src\mazegame.cpp
+	"MazeGame.h"
+
+1557536686 f:\coding\!a\dut\test\fun\include\mazegame.h
+	"Mazefactory.h"
+
+1557535315 source:f:\coding\!a\dut\test\fun\src\room.cpp
+	"Room.h"
+
+1557535577 source:f:\coding\!a\dut\test\fun\src\roomwithabomb.cpp
+	"RoomWithABomb.h"
+
+1557488606 source:f:\coding\!a\dut\test\fun\src\wall.cpp
+	"Wall.h"
+

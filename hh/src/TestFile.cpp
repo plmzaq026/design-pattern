@@ -1,4 +1,5 @@
 #include "TestFile.h"
+#include <cdk.h>
 
 TestFile::TestFile()
 {
@@ -40,5 +41,37 @@ void TestFile::testGraphics()
         gc->draw_char(ch);
     }
     gc->draw_string(" ko no dio da!");
+
+}
+
+void TestFile::testColors()
+{
+      CDKSCREEN   *cdkscreen;
+      CDKLABEL    *demo;
+      char        *mesg[4];
+
+      cdkscreen = initCDKScreen (NULL);
+
+      /* Start CDK Colors */
+      initCDKColor();
+
+      /* Set the labels up.      */
+      mesg[0] = "</31>This line should have a yellow foreground and a cyan background.<!31>";
+      mesg[1] = "</05>This line should have a white  foreground and a blue background.<!05>";
+      mesg[2] = "</26>This line should have a yellow foreground and a red  background.<!26>";
+      mesg[3] = "<C>This line should be set to whatever the screen default is.";
+
+      /* Declare the labels.     */
+      demo   = newCDKLabel (cdkscreen, CENTER, CENTER, mesg, 4, TRUE, TRUE);
+
+      /* Draw the label          */
+      drawCDKLabel (demo, TRUE);
+      waitCDKLabel (demo, ' ');
+
+      /* Clean up           */
+      destroyCDKLabel (demo);
+      destroyCDKScreen (cdkscreen);
+      endCDK();
+      exit (0);
 
 }

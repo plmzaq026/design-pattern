@@ -16,6 +16,7 @@ class TestFile
         TestFile();
         virtual ~TestFile();
         void testGraphics();
+        void testColors();
 
     private:
         WINDOW * win;

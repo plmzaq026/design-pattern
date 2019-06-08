@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="hh" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/hh" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../comefrom/ncurses-5.9/lib/libncurses++.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libform_g.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libform.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libmenu_g.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libmenu.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libpanel_g.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libpanel.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libncurses_g.a" />
+					<Add library="../../../comefrom/ncurses-5.9/lib/libncurses.a" />
+					<Add library="../../../../../../usr/local/lib/libcdk.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/hh" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Char.h" />
+		<Unit filename="include/CharFactory.h" />
+		<Unit filename="include/Color.h" />
+		<Unit filename="include/Font.h" />
+		<Unit filename="include/Glyph.h" />
+		<Unit filename="include/Graphics.h" />
+		<Unit filename="include/Paragraph.h" />
+		<Unit filename="include/Picture.h" />
+		<Unit filename="include/PictureFactory.h" />
+		<Unit filename="include/Row.h" />
+		<Unit filename="include/TestFile.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/TestFile.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

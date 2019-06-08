@@ -1,0 +1,87 @@
+# depslib dependency file v1.0
+1559697451 source:/home/algorithm/Documents/coding/fun/hh/main.cpp
+	<iostream>
+	<ncurses.h>
+	<cdk.h>
+	"TestFile.h"
+	<cdk.h>
+
+1559629888 source:/home/algorithm/Documents/coding/fun/hh/src/Graphics.cpp
+	"Graphics.h"
+
+1559697423 /home/algorithm/Documents/coding/fun/hh/include/Graphics.h
+	<ncurses.h>
+	<cdk.h>
+	<bits/stdc++.h>
+	"Color.h"
+
+1559697451 /home/algorithm/Documents/coding/fun/hh/include/TestFile.h
+	"Graphics.h"
+	"Row.h"
+	"PictureFactory.h"
+	"CharFactory.h"
+	"Font.h"
+	"Color.h"
+
+1559697624 source:/home/algorithm/Documents/coding/fun/hh/src/TestFile.cpp
+	"TestFile.h"
+
+1559698071 /home/algorithm/Documents/coding/fun/hh/include/Color.h
+	<cdk.h>
+	<bits/stdc++.h>
+
+1559641719 /home/algorithm/Documents/coding/fun/hh/include/Page.h
+	"Graphics.h"
+
+1559655995 /home/algorithm/Documents/coding/fun/hh/include/Row.h
+	"Glyph.h"
+
+1559656362 /home/algorithm/Documents/coding/fun/hh/include/Glyph.h
+	<bits/stdc++.h>
+	"Graphics.h"
+
+1559470633 /home/algorithm/Documents/coding/fun/hh/include/PictureFactory.h
+	"Picture.h"
+
+1559656379 /home/algorithm/Documents/coding/fun/hh/include/Picture.h
+
+1559655800 /home/algorithm/Documents/coding/fun/hh/include/CharFactory.h
+	"Char.h"
+
+1559656379 /home/algorithm/Documents/coding/fun/hh/include/Char.h
+	"Glyph.h"
+
+1559656011 /home/algorithm/Documents/coding/fun/hh/include/ParagraphCompositor.h
+	"Paragraph.h"
+
+1559655261 /home/algorithm/Documents/coding/fun/hh/include/Paragraph.h
+	"CharFactory.h"
+	"FontFactory.h"
+	"ColorFactory.h"
+	"ParagraphFormat.h"
+	"StringFormat.h"
+	"Row.h"
+
+1559546661 /home/algorithm/Documents/coding/fun/hh/include/FontFactory.h
+	"Font.h"
+
+1559692231 /home/algorithm/Documents/coding/fun/hh/include/Font.h
+	<cdk.h>
+
+1559655123 /home/algorithm/Documents/coding/fun/hh/include/ColorFactory.h
+	"Color.h"
+
+1559547057 /home/algorithm/Documents/coding/fun/hh/include/ParagraphFormat.h
+
+1559655234 /home/algorithm/Documents/coding/fun/hh/include/StringFormat.h
+	"Font.h"
+	"Color.h"
+
+1559569987 /home/algorithm/Documents/coding/fun/hh/include/PageFormat.h
+	"Paper.h"
+
+1559569756 /home/algorithm/Documents/coding/fun/hh/include/Paper.h
+	"Calc.h"
+
+1559569324 /home/algorithm/Documents/coding/fun/hh/include/Calc.h
+

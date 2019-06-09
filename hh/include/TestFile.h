@@ -8,7 +8,11 @@
 #include "CharFactory.h"
 
 #include "Font.h"
-#include "Color.h"
+#include "ColorFactory.h"
+
+
+#include "Frame.h"
+
 
 class TestFile
 {
@@ -16,8 +20,7 @@ class TestFile
         TestFile();
         virtual ~TestFile();
         void testGraphics();
-        void testColors();
-
+        void testFrame(string);
     private:
         WINDOW * win;
 };

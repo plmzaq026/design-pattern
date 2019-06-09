@@ -2,47 +2,41 @@
 #define FONT_H
 
 
-#include <cdk.h>
 
+#include <cdk.h>
+#include <bits/stdc++.h>
+using namespace std;
 class Font
 {
     public:
-        Font()
+    //id = 0,1,2
+        Font(WINDOW * win,int id = 0)
         {
+            this->win = win;
+            this->id = (0 <= id && id <= 3)?id:0;
+            initscr();
+
         };
         virtual ~Font()
         {
-
+            getch();
+            endwin();
         };
-
-       void test()
-       {
-            char         *mesg[4];
-            cdkscreen = initCDKScreen (NULL);
-
-          /* Start CDK Colors */
-          initCDKColor();
-
-          /* Set the labels up.  */
-          mesg[0] = "</B/31>Bold text            yellow foreground / blue background.<!31>";
-          mesg[1] = "</U/05>Underlined text      white  foreground / blue background.<!05>";
-          mesg[2] = "</K/26>Blinking text        yellow foreground / red  background.<!26>";
-          mesg[3] = "<C>This line uses the screen default colors.";
-
-          /* Declare the labels.  */
-          demo = newCDKLabel (cdkscreen, CENTER, CENTER, mesg, 4, TRUE, TRUE);
-
-          /* Draw the label */
-          drawCDKLabel (demo, TRUE);
-          waitCDKLabel (demo, ' ');
-
-          /* Clean up */
-          destroyCDKLabel (demo);
-          destroyCDKScreen (cdkscreen);
-          endCDK();
-       }
+        void DEFAULT()
+        {
+            attron(A_NORMAL);
+        };
+        void UNDERLINE()
+        {
+            attron(A_UNDERLINE);
+        };
+        void BOLD()
+        {
+            attron(A_BOLD);
+        };
     private:
-        CDKSCREEN * cdkscreen;
-        CDKLABEL * demo;
+        WINDOW * win;
+        int id;
 };
+
 #endif // FONT_H

@@ -86,3 +86,86 @@
 
 1559569324 /home/algorithm/Documents/coding/fun/hh/include/Calc.h
 
+1560076151 source:/home/algorithm/Documents/coding/design-pattern/hh/src/TestFile.cpp
+	"TestFile.h"
+	<cdk.h>
+
+1560041855 /home/algorithm/Documents/coding/design-pattern/hh/include/TestFile.h
+	"Graphics.h"
+	"Row.h"
+	"PictureFactory.h"
+	"CharFactory.h"
+	"Font.h"
+	"ColorFactory.h"
+	"Frame.h"
+
+1559992910 /home/algorithm/Documents/coding/design-pattern/hh/include/Graphics.h
+	<ncurses.h>
+	<cdk.h>
+	<bits/stdc++.h>
+	"FontFactory.h"
+	"ColorFactory.h"
+
+1559992539 /home/algorithm/Documents/coding/design-pattern/hh/include/Color.h
+	<cdk.h>
+	<bits/stdc++.h>
+
+1559993149 /home/algorithm/Documents/coding/design-pattern/hh/include/Row.h
+	"Glyph.h"
+
+1559656362 /home/algorithm/Documents/coding/design-pattern/hh/include/Glyph.h
+	<bits/stdc++.h>
+	"Graphics.h"
+
+1559470633 /home/algorithm/Documents/coding/design-pattern/hh/include/PictureFactory.h
+	"Picture.h"
+
+1559656379 /home/algorithm/Documents/coding/design-pattern/hh/include/Picture.h
+
+1559655800 /home/algorithm/Documents/coding/design-pattern/hh/include/CharFactory.h
+	"Char.h"
+
+1559656379 /home/algorithm/Documents/coding/design-pattern/hh/include/Char.h
+	"Glyph.h"
+
+1559992522 /home/algorithm/Documents/coding/design-pattern/hh/include/Font.h
+	<cdk.h>
+	<bits/stdc++.h>
+
+1560042012 source:/home/algorithm/Documents/coding/design-pattern/hh/main.cpp
+	<iostream>
+	<ncurses.h>
+	<cdk.h>
+	"TestFile.h"
+	<cdk.h>
+
+1559990577 /home/algorithm/Documents/coding/design-pattern/hh/include/ColorFactory.h
+	"Color.h"
+
+1559992776 /home/algorithm/Documents/coding/design-pattern/hh/include/FontFactory.h
+	"Font.h"
+
+1560041465 source:/home/algorithm/Documents/coding/design-pattern/hh/src/Buffer.cpp
+	"Buffer.h"
+
+1560041457 /home/algorithm/Documents/coding/design-pattern/hh/include/Buffer.h
+	<ncurses.h>
+	<vector>
+	<string>
+
+1560076247 source:/home/algorithm/Documents/coding/design-pattern/hh/src/Frame.cpp
+	"Frame.h"
+	<fstream>
+	<iostream>
+	<sstream>
+
+1560075967 /home/algorithm/Documents/coding/design-pattern/hh/include/Frame.h
+	<ncurses.h>
+	"Buffer.h"
+	"Graphics.h"
+	"Caret.h"
+
+1560076210 /home/algorithm/Documents/coding/design-pattern/hh/include/Caret.h
+	<ncurses.h>
+	"Buffer.h"
+

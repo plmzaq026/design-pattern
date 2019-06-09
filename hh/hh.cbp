@@ -46,18 +46,28 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Buffer.h" />
+		<Unit filename="include/Caret.h" />
 		<Unit filename="include/Char.h" />
 		<Unit filename="include/CharFactory.h" />
 		<Unit filename="include/Color.h" />
+		<Unit filename="include/ColorFactory.h" />
+		<Unit filename="include/Document.h" />
 		<Unit filename="include/Font.h" />
+		<Unit filename="include/FontFactory.h" />
+		<Unit filename="include/Frame.h" />
 		<Unit filename="include/Glyph.h" />
 		<Unit filename="include/Graphics.h" />
+		<Unit filename="include/Page.h" />
 		<Unit filename="include/Paragraph.h" />
 		<Unit filename="include/Picture.h" />
 		<Unit filename="include/PictureFactory.h" />
 		<Unit filename="include/Row.h" />
+		<Unit filename="include/StringFormat.h" />
 		<Unit filename="include/TestFile.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Buffer.cpp" />
+		<Unit filename="src/Frame.cpp" />
 		<Unit filename="src/TestFile.cpp" />
 		<Extensions>
 			<code_completion />

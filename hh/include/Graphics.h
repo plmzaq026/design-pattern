@@ -5,7 +5,8 @@
 #include <cdk.h>
 #include <bits/stdc++.h>
 
-#include "Color.h"
+#include "FontFactory.h"
+#include "ColorFactory.h"
 using namespace std;
 class Graphics
 {
@@ -15,7 +16,6 @@ class Graphics
             this->win = win;
             current_x = 0;
             current_y = 0;
-            my_color = new Color(win);
         };
         WINDOW * getWindow()
         {
@@ -74,22 +74,46 @@ class Graphics
         {
             return 1;
         }
+        void setFont(int index)
+        {
+            FontFactory * ff = new FontFactory;
+            Font * my_font = ff->createFont(win,(index == 1 || index == 2)?index:0);
+            if(index == 1)
+                my_font->BOLD();
+            else
+            if(index == 2)
+                my_font->UNDERLINE();
+            else
+                my_font->DEFAULT();
+        }
         void setForeColor(int index)
         {
+            ColorFactory * cf = new ColorFactory;
+            Color * my_color = cf->createColor(win,(index == 1 || index == 2)?index:0);
             if(index == 1)
-                my_color->RED();
+                my_color->F_RED();
+            else
             if(index == 2)
-                my_color->BLUE();
+                my_color->F_BLUE();
+            else
+                my_color->DEFAULT();
         }
-        void setBackColor()
+        void setBackColor(int index)
         {
-
+            ColorFactory * cf = new ColorFactory;
+            Color * my_color = cf->createColor(win,(index == 3 || index == 4)?index:0);
+            if(index == 3)
+                my_color->F_RED();
+            else
+            if(index == 4)
+                my_color->F_BLUE();
+            else
+                my_color->DEFAULT();
         }
     private:
         WINDOW * win;
         int current_x;
         int current_y;
-        Color * my_color;
 };
 
 #endif // GRAPHICS_H

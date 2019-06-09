@@ -1,23 +1,20 @@
 #ifndef PARAGRAPH_H
 #define PARAGRAPH_H
 
-#include "CharFactory.h"
-#include "PictureFactory.h"
-#include "Row.h"
+#include "Glyph.h"
+#include "StringFormat.h"
 
 class Paragraph
 {
 private:
-    vector<Glyph *> glyphs;
-    vector<Row *> rows;
+    vector<Glyph *> rows;
     bool formatted;
+    StringFormat * sf;
 public:
     Paragraph()
     {
-
+        formatted = false;
     };
-
-
 };
 
 #endif // PARAGRAPH_H

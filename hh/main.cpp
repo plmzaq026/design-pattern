@@ -8,6 +8,6 @@ using namespace std;
 int main()
 {
     TestFile tf;
-    tf.testGraphics();
+    tf.testFrame("");
     return 0;
 }
